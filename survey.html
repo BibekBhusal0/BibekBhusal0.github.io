@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Coffee Survey</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <header>
+        <h1> Coffee Survey</h1>
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="drinks.html"> Drinks</a></li>        
+            <li><a href="grinding.html"> Grinding</a></li>
+            <li><a href="roasting.html"> Roasting</a></li>
+            <li><a href="brewing.html"> Brewing</a></li>
+            <li><a href="survey.html"> Survey</a></li>
+    
+        </ul>
+    </header>
+    </nav>
+<aside>
+    <figure>
+        <img src="images/espresso.jpg" alt="a cuo of espresso">
+    </figure>
+</aside>
+
+<form>
+<fieldset>
+    <legend>Personal Information</legend>
+    Your Name <br>
+    <input type="text" size="40" name="name" required > <br>
+
+    Email Address <br>
+    <input type="email" name="email" required size="40"> <br>
+</fieldset>
+
+<fieldset>
+    <legend> Coffee Preperation Methods</legend>
+
+    Tell us your coffee preparation methods. <br>
+    <textarea name="preperation" cols="40" rows="6"></textarea>
+<br><br>
+    Do you grind your own beans? <br>
+    <input type="radio" name="grind" value="y">
+    yes <br>
+    <input type="radio" name="grind" value="n">
+    no <br>
+    <br>
+    How do you drink your coffee? <br>
+    <input type="checkbox" name="drink" value="suger"> 
+    with sugar <br>
+    <input type="checkbox" name="drink" value="cream">
+    with cream <br>
+
+    What is your favorite coffee drink?
+    <br>
+    <select name="fav" >
+    <option value="" > please select a drink</option>
+    <option  value="drip">drip coffee</option>
+    <option  value="press">french press</option>
+    <option  value="espresso">espresso</option>
+    <option  value="latte">latte</option>
+    <option  value="flavored">flavored</option>
+    </select>
+</fieldset>
+    <input type="submit" value="Submit">
+
+</form>
+<nav>
+    <footer>    
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+             <li><a href="drinks.html"> Drinks</a></li>       
+            <li><a href="grinding.html"> Grinding</a></li>
+            <li><a href="roasting.html"> Roasting</a></li>
+            <li><a href="brewing.html"> Brewing</a></li>
+            <li><a href="survey.html"> Survey</a></li>
+    
+        </ul>
+    </footer>
+    </nav>
+</body>
+</html>
