@@ -7,8 +7,6 @@ body{
 p{
     text-align: justify;
 }
-
-
 h3{
     color: rgb(11, 42, 78);
 }
@@ -27,20 +25,12 @@ a:hover{
     text-decoration: none;
     color: rgb(165, 71, 42);
 }
-img{
-    
-}
-aside{
-
-}
-
 .rimg{
     float: right;
     margin-left: 2%;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 120%;
-
 }
 header{
     background-image: url(images/coffee-beans.jpg);
@@ -71,8 +61,6 @@ nav ul{
     color: #ffffff;
     margin-top: 3px;
 }
-
-
 nav  a,nav ul visited{
 
     color: #ffffff;
@@ -80,13 +68,11 @@ nav  a,nav ul visited{
     display: block;
     padding: 10px,0;
 }
-
 nav li a:hover{
 
     background-color:rgb(165, 71, 42);
     color: #ffffff;
 }
-
 footer a,footer a:visited{
     color: grey;
     background-color: #ffffff;
@@ -95,7 +81,6 @@ footer a,footer a:visited{
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
-
 aside{
     float: right;
     width: 300px ;
