@@ -69,7 +69,6 @@ nav  a,nav ul visited{
     padding: 10px,0;
 }
 nav li a:hover{
-
     background-color:rgb(165, 71, 42);
     color: #ffffff;
 }
@@ -79,7 +78,6 @@ footer a,footer a:visited{
     font-weight: lighter;
     font-size: 90%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
 aside{
     float: right;
@@ -89,8 +87,8 @@ aside{
     margin-top: 0;
     padding: 20px;
     text-align: justify;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 85%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 85%;
 }
 table, th ,td {
     border: 0.5px solid black ;
