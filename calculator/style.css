@@ -1,20 +1,27 @@
 
 .n {
-    width: 100px ;
     font-size: 40px;
     margin: 0;
     text-align: center;
     margin: 1px ;
     transition: all 0.5s;
     float: left;
+    
+}
+#n1,#n2{
+    border: 0.1px rgba(8, 44, 90, 0.329) solid;
+    width: 150px ;
+
+
 }
 
 input{
     font-size: 30px;
 }
 #n1:hover ,#n2:hover {
-    width: 200px;
+
     height: 60px;
+    border: 1px black solid ;
 }
 .s{
     width: 10px ;
