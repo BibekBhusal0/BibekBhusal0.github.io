@@ -2,25 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <script src="first.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form >
-            <input class="n" type="number" name="n1" id="n1" autofocus >
-            <div style="font-weight: bolder;" id="sym" class="n"></div>
-            <input class="n" type="number" name="n2" id="n2">
-            <div id="output" class="n"></div>
-            <br> <br><br><br>
-            <input calss="s" type="submit" value="<x">
-    </form>    
+    <div id="screen" > 
+        <span id="sym" class="n"></span>
+        <span id="output" class="n"></span>
+        <span id="output2" class="n"></span>
+    </div>
+    <form action="">
+    <button calss="s" type="submit" value="AC" id='clear2'> AC </button></form>
+    <button calss="s" type="submit" value="AC" id='clear'> AC </button>
    <br>
-        <button class="btn" data-work="+" id="add">+</button>
-        <button class="btn" data-work="-" id="subtract">-</button>
-        <button class="btn" data-work="&#215;" id="multply">&#215;</button>
-        <button class="btn" data-work="÷" id="divide">÷</button>
-        
+    <button class="btn" id="7" data-value="7" >7</button>
+    <button class="btn" id="8" data-value="8" >8</button>
+    <button class="btn" id="9" data-value="9" >9</button>
+    <button class="btn" data-value=""  data-work="÷" data-op="÷" id="divide">÷</button>
+    <button class="btn" id="4" data-value="4" >4</button>
+    <button class="btn" id="5" data-value="5" >5</button>
+    <button class="btn" id="6" data-value="6" >6</button>
+    <button class="btn" data-value=""  data-work="&#215;" data-op="x" id="multply">&#215;</button>
+    <button class="btn" id="1" data-value="1" >1</button>
+    <button class="btn" id="2" data-value="2" >2</button>
+    <button class="btn" id="3" data-value="3" >3</button>
+    <button class="btn" data-value="" data-work="+" data-op="+" id="add">+</button>
+    <button class="btn" data-value="0" >0</button>
+    <button class="btn" data-value="." >.</button>
+    <button class="btn"id='equals' data-work="" data-value="" >=</button>
+    <button class="btn" data-value=""  data-work="-" data-op="-" id="subtract">-</button>   
 </body>
 </html>
