@@ -1,25 +1,53 @@
-
+#output,#output2{
+    overflow: hidden;
+    width:360px ;
+    margin: auto;
+    position: absolute;
+    top: 80px ;
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 40px;
+    margin-right: 20px;
+}
+body{
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px black solid;
+    padding: 10px;
+}
+#screen{
+    background-color: rgb(152, 198, 216);
+    width: 380px;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 5px;
+}
 .n {
     font-size: 40px;
-    margin: 0;
-    text-align: center;
-    margin: 1px ;
-    transition: all 0.5s;
-    float: left;
-    
+    text-align: right;
+    transition: all 0.1s;
+    float: right;
 }
+#sym{
+    float: left;
+    position: relative;
+    font-size: 30px;
+    font-weight: bolder;
+    top: 90px;
+    margin-left: 2px;
+}
+
 #n1,#n2{
     border: 0.1px rgba(8, 44, 90, 0.329) solid;
     width: 150px ;
-
-
 }
 
 input{
     font-size: 30px;
 }
 #n1:hover ,#n2:hover {
-
     height: 60px;
     border: 1px black solid ;
 }
@@ -29,13 +57,19 @@ input{
 
 @media all and (max-width: 600px) {
     body{
-        color: aqua;
+        color: red;
     }
 }
 
 .btn{
-    width: 40px;
-    height: 40px;
-    font-size: 30px;
-    clear: left;
+    width: 20%;
+    margin: 2%;
+    height: 80px;
+    font-size: 70px;
+    padding: 0;
+    float: left;
+}
+.btn:hover{
+    background-color:rgba(185, 185, 185, 0.733);
+    border: 2px solid gray;
 }
