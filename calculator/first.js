@@ -5,10 +5,9 @@ function calculate(){
         localStorage.setItem('x',x)
         localStorage.setItem('y',y)
     document.querySelectorAll('button').forEach (function(button) {    
-        
         button.onclick = function(){
             if (document.querySelector('#sym').innerHTML.length == 0 ){
-             x = x + button.dataset.value;
+            x = x + button.dataset.value;
             localStorage.setItem('x',x)
             document.querySelector('#output').innerHTML = x;
             }
@@ -41,27 +40,30 @@ function calculate(){
                 symbol=localStorage.getItem('op')
 
                 if (localStorage.getItem('work') =='+' ){
-                    var z= Number(x) + Number(y);
-                    localStorage.setItem('z',z)
+                    var z = Number(x) + Number(y);
                 }
                 if (localStorage.getItem('work') =='-'  ){
                     var z=Number(x) - Number(y);
-                    localStorage.setItem('z',z)
                 }
                 if (localStorage.getItem('work') =='x'  ){
                     var z=Number(x) * Number(y);
-                    localStorage.setItem('z',z)
                 }                        
                 if (localStorage.getItem('work') =='÷'  ){
-                    var z=x/y;
+                    var z=x%y;
+                }
+                if (z % 1 !='0'){
+                    localStorage.setItem('z',z.toFixed(3))
+                }
+                else{
                     localStorage.setItem('z',z)
                 }
                 document.querySelector('#sym').innerHTML = ''
-                document.querySelector('#output2').innerHTML= localStorage.getItem('z');
+                document.querySelector('#output2').innerHTML= localStorage.getItem('z') ;
                 document.querySelector('#output').innerHTML= `${x}${symbol}${y}=`; 
                }   
-            if(button.id =='clear'){
-                localStorage.clear;
-            }
+               if (button.id == 'clear'){
+                localStorage.setItem('x')=''
+               }
+
             } 
         } )}
