@@ -1,75 +1,39 @@
-#output,#output2{
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+.body{
+    font-family: 'Tektur', cursive !important;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+.🛺🛺{
+    width: 360px;
+    margin: auto;
+    background-color: rgb(130, 221, 130);
     overflow: hidden;
-    width:360px ;
-    margin: auto;
-    position: absolute;
-    top: 80px ;
-    font-size: 80px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-right: 40px;
-    margin-right: 20px;
+    display: block;
+    align-items: center;
 }
-body{
-    width: 400px;
-    height: 630px;
-    margin: auto;
-    margin-top: 10px;
-    border: 1px black solid;
-    padding: 10px;
-}
-#screen{
-    background-color: rgb(152, 198, 216);
-    width: 380px;
-    height: 150px;
-    margin: auto;
-    margin-bottom: 5px;
-}
-.n {
-    font-size: 40px;
-    text-align: right;
-    transition: all 0.1s;
-    float: right;
-}
-#sym{
-    float: left;
-    position: relative;
-    font-size: 30px;
-    font-weight: bolder;
-    top: 90px;
-    margin-left: 2px;
-}
-
-#n1,#n2{
-    border: 0.1px rgba(8, 44, 90, 0.329) solid;
-    width: 150px ;
-}
-
-input{
-    font-size: 30px;
-}
-#n1:hover ,#n2:hover {
-    height: 60px;
-    border: 1px black solid ;
-}
-.s{
-    width: 10px ;
-}
-
-@media all and (max-width: 600px) {
-    body{
-        color: red;
-    }
-}
-
 .btn{
-    width: 20%;
-    margin: 2%;
-    height: 80px;
-    font-size: 70px;
-    padding: 0;
-    float: left;
+    cursor: pointer;
+    font-size: 55px;
+    width:22%;
+    text-align: center;
+    padding: 2px;
+    font-family: 'Tektur', cursive ;
 }
 .btn:hover{
     background-color:rgba(185, 185, 185, 0.733);
     border: 2px solid gray;
+}
+input{
+    text-align: right;
+}
+.👀{
+    width:90%;
+    margin:10px;
+    padding: 4px;
+    font-size: 50px;
+    font-family: 'Tektur', cursive;
 }
