@@ -1,0 +1,145 @@
+body{
+    margin: 0 auto;
+    width: 960px ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    text-align: justify;
+}
+h3{
+    color: rgb(11, 42, 78);
+}
+ul{
+    list-style-image: url(images/tiny-coffee-cup.gif);
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 110%;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(165, 71, 42);
+}
+.rimg{
+    float: right;
+    margin-left: 2%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 120%;
+}
+header{
+    background-image: url(images/coffee-beans.jpg);
+    height: 60px ;
+    margin: 0;
+    padding: 0%;
+}
+header h1{
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0%;
+}
+nav li{
+    float: left;
+    width:158px;
+    text-align: center;
+    height: 35px;
+    font-size: 20px;
+    list-style: none;
+    margin: 1px;
+    margin-bottom: 20px;
+    display: block;
+    }
+nav ul{
+    padding: 0;
+    color: #ffffff;
+    margin-top: 3px;
+    border: none;
+}
+nav  a,nav button{
+    color: #ffffff;
+    background-color: rgb(255, 61, 61);
+    width: 100%;
+    padding: 9px 0;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition:all 0.3s;
+}
+nav li a:hover ,nav li button:hover {
+    background-color:rgb(165, 71, 42);
+    color: #ffffff;
+    font-size: 110%;
+}
+.to-clear{
+    clear: left;
+    padding-top: 1rem;
+}
+footer a,footer button{
+    color: grey;
+    background-color: #ffffff;
+    font-weight: lighter;
+    font-size: 90%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+aside{
+    float: right;
+    width: 300px ;
+    background-color: tan;
+    margin: 20px;
+    margin-top: 0;
+    padding: 20px;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 85%;
+}
+table, th ,td {
+    border: 0.5px solid black ;
+    border-spacing: 0;
+    text-align: center;
+    background-color: rgba(204, 186, 163, 0.295);
+    border-collapse: collapse;
+    padding: 8px;
+}
+th{
+   background-color: rgba(175, 142, 97, 0.541);
+}
+th{
+    width: 20%;
+    background-color: b;
+}
+.pages{
+    display: none;
+}
+.form{
+    font-size: 1.1rem;
+}
+input{
+    font-size: 1.3rem;
+    padding: 5px 3px ;
+}
+option{
+    font-size:1.2rem;
+}
+.submit{
+    margin: 0.7rem 0;
+    padding: 0.7rem;
+}
+.select{
+    margin: 8px 0;
+    font-size: 1.2rem;
+}
+.smallimage{
+    float: left ;
+    margin:1% 2% ;
+    font-size: 90%;
+    text-align: center   
+}
+footer button:hover{
+    font-size: 1.5rem;
+}
