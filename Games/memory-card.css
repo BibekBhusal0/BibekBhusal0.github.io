@@ -1,0 +1,144 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.massage{
+    margin-top: 3rem;
+}
+.hint{
+    display: none;
+}
+a , a:visited{
+    text-decoration: none;
+    color: rgb(55, 86, 126);
+}
+a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 80%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+}
+
+img{
+    height : 100%;
+}
+.main{
+    position:relative;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin :auto;
+    text-align: center;
+}
+.scorecard{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.container{
+    position: relative;
+    margin: auto;
+    width:10%;
+    height:10%;
+}
+.allgrid{
+    position: relative;
+    width:600px;
+    height:500px;
+    display: grid;
+    gap: 0.6rem;
+    grid-template-columns: repeat(3 , 1fr);
+}
+.win{
+    display: none;
+    background-color: #d6b263de;
+    width: 400px;
+    height: 400px;
+    font-size: 3rem;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.card{
+    cursor: pointer;
+    font-size:3rem;
+    width: 100%;
+    height:100%;
+    transform-style: preserve-3d;
+    transition :all 0.5s ease;
+    text-align: center;
+}
+.front{
+    position:absolute;
+    backface-visibility:hidden;
+    width:100%;
+    height:100%;
+    border: 1.5px solid rgba(0, 0, 0, 0.466) ;
+    border-radius: 12px;
+    background-color:aqua;
+    background: url(cards-img/snowflake.svg ) no-repeat center center/cover  ;
+}
+.back{
+    border: 1.5px solid rgba(0, 0, 0, 0.466) ;
+    border-radius: 12px;
+    position:absolute;
+    backface-visibility:hidden;
+    width:100%;
+    height:100%;
+    background-color:#d3f3f1;
+    transform:rotateY(180deg);
+}
+
+@media screen and (max-width:800px) {
+    *{
+        font-size: 3vw;
+    }
+    button{
+        padding: 0.25em 0.75em;
+    }
+    .main{
+        width: 98vw;
+        height: 90vw;
+    }
+    .allgrid{
+        width: 90%;
+    }
+    .win{
+        width: 37vw;
+        height: 20vh;  
+        font-size:4vw ;
+        padding: 2vw;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .win{
+        height: 15vh;  
+    }
+    img{
+        height:auto;
+        width: 18vw;
+        scale: 50%;
+        transform: translate(0,-40%);
+    }
+    .card{
+        width: 20vw;
+        height: 10vh;
+    }
+    
+}
